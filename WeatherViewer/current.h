@@ -1,7 +1,6 @@
 #pragma once
 #include <ostream>
 
-
 namespace WeatherViewer
 {
     class Current : public AbstractViewer

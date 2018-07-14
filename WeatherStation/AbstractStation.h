@@ -13,9 +13,6 @@ public:
 	virtual void notify();
 
 private:
-
 	std::vector<std::reference_wrapper<AbstractViewer>> observers;
-
-
 };
 

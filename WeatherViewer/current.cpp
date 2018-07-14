@@ -4,7 +4,6 @@
 #include "current.h"
 #include <iostream>
 
-
 namespace WeatherViewer
 {
     std::ostream& operator<<(std::ostream& os, WeatherViewer::Current const& current)
@@ -16,6 +15,7 @@ namespace WeatherViewer
         auto const pressure{ station.getPressure() };
 
 		os <<
+			"Current Conditions: " << std::endl <<
 			std::setw(3) << temperature.get() << "°C, " <<
 			std::setw(3) << humidity.get() << "%, " <<
 			std::setw(4) << pressure.get() << " in. Hg" << std::endl << std::endl;
@@ -25,7 +25,6 @@ namespace WeatherViewer
 
 	Current::Current(WeatherStation::Station & station) : station_{ station}
     {
-		//put attach here
 		station_.attach(*this);
     }
 

@@ -18,6 +18,7 @@ namespace WeatherViewer
         auto const meanPressure{ station.getMeanPressure(begin, now) };
 
         os <<
+			"Statistical Conditions: " << std::endl <<
             std::setw(3) << meanTemperature.get() << "°C, " <<
             std::setw(3) << meanHumidity.get()    << "%, "  <<
             std::setw(4) << meanPressure.get()    << " in. Hg" << std::endl << std:: endl;

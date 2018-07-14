@@ -1,11 +1,14 @@
 #include "stdafx.h"
 #include <cassert>
 #include <limits>
+#include <cstdlib>
 #include "gsl.h"
 #include "temperature.h"
 #include "humidity.h"
 #include "pressure.h"
 #include "station.h"
+
+
 
 
 namespace WeatherStation
@@ -23,18 +26,18 @@ namespace WeatherStation
 
     Temperature Station::getTemperature() const
     {
-        auto const result{ Temperature(71) }; // TODO: Create a mock temperature reading.
+        auto const result{ Temperature(rand() % 100) }; 
         return result;
     }
 
     Humidity Station::getHumidity() const
     {
-        auto const result{ Humidity(60) }; // TODO: Create a mock humidity reading.
+        auto const result{ Humidity(rand() % 90) };
         return result;
     }
 
     Pressure Station::getPressure() const {
-        auto const result{ Pressure(1000.0) }; // TODO: Create a mock pressure reading.
+        auto const result{ Pressure(rand() % 900) }; 
         return result;
     }
 

@@ -1,8 +1,6 @@
-#ifndef WEATHER_STATION_PRESSURE_H
-#define WEATHER_STATION_PRESSURE_H
+#pragma once
 
 #include <limits>
-
 
 namespace WeatherStation
 {
@@ -25,4 +23,3 @@ namespace WeatherStation
     };
 }
 
-#endif // WEATHER_STATION_PRESSURE_H

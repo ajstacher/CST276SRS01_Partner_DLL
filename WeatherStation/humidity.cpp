@@ -1,6 +1,5 @@
 #include "stdafx.h"
 #include "humidity.h"
-#include <limits>
 
 namespace WeatherStation
 {

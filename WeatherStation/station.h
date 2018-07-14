@@ -14,7 +14,6 @@
 #include "record.h"
 #include "AbstractStation.h"
 
-
 namespace WeatherStation
 {
     class Station : public AbstractStation  

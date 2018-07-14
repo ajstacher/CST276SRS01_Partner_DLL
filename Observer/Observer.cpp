@@ -3,7 +3,7 @@
 
 void Observer::update()
 {
-	//update in inherited class
+	//impliment in Concrete class
 	return;
 }
 

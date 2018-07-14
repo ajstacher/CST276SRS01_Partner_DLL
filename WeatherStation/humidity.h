@@ -1,5 +1,4 @@
-#ifndef WEATHER_STATION_HUMIDITY_H
-#define WEATHER_STATION_HUMIDITY_H
+#pragma once
 
 namespace WeatherStation
 {
@@ -22,4 +21,4 @@ namespace WeatherStation
     };
 }
 
-#endif // WEATHER_STATION_HUMIDITY_H
+
